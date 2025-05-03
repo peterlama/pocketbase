@@ -16,4 +16,4 @@ COPY --from=download /pocketbase /usr/local/bin/pocketbase
 
 EXPOSE 8090
 
-ENTRYPOINT /usr/local/bin/pocketbase serve --http=0.0.0.0:8090 --dir=/root/pocketbase
+ENTRYPOINT /usr/local/bin/pocketbase serve --http=0.0.0.0:8090 --dir=/root/pocketbase/pb_data --publicDir=/root/pocketbase/pb_public
